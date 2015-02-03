@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0038)http://dostavka-obedov.zakazhiobed.ru/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Питание работноков предприятия</title>
+    <meta name="keywords" content="доставка, обед, офис, производство, еда, челябинск" />
+    <meta name="description" content="Доставка обедов в офисы компаний и на производство. Наше недельное меню." />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <meta http-equiv="Content-Language" content="ru" />
+    <link rel="icon" href="http://design.zakazhiobed.ru/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://design.zakazhiobed.ru/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/Content/main.css" type="text/css" />
+    <script type="text/javascript" src="/Content/main.js"></script>
+    <link href="~/Content/article_styles.css" media="all" type="text/css" rel="stylesheet" />
+    <link href="~/Content/style.css" media="all" type="text/css" rel="stylesheet" />
+
+    <link href="~/Content/helioscond.css" type="text/css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.simplemodal.1.4.3.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/fns.js" type="text/javascript"></script>
+
+
+</head>
+<body style="margin:0px">
+      <div class="header">
+           @* <a href="http://bhp.by/" class="logo"></a>*@
+            <div class="header_right">
+                <div class="header_rigth_top">    
+                   @* <div class="header_lang">
+                        <a href="http://bhp.by/" class="header_lang_href"></a>
+                    </div>*@
+                    <div style="text-align:right ;">
+                        <div class="header_registration" style="left: 970px;">
+                            <div class="header_registration_picture"></div>
+                            @*<a href="" onclick="return show_object(&#39;enter&#39;);" class="header_registration_href">вход</a>*@
+                            @Html.ActionLink("Вход", "AuthorizeIndex", "Account", null, new { @class = "header_registration_href" })
+                            <div class="header_registration_separator"></div>
+                            @*  <a href="" onclick="return show_object(&#39;registration&#39;);" class="header_registration_href">регистрация</a>*@
+                            @Html.ActionLink("Регистрация", "RegisterIndex", "Account", null, new { @class = "header_registration_href" })
+                            <div class="clear"></div>
+                        </div>
+                        @*<div class="header_search">
+                            <form method="post" action="http://bhp.by/search/">
+                                <input type="text" name="search" class="header_search_form" value="Поиск по сайту..." onfocus="if ( &#39;Поиск по сайту...&#39; == value ) { value = &#39;&#39;; } " onblur="if ( &#39;&#39; == value ) { value = &#39;Поиск по сайту...&#39;; }">
+                                <input type="submit" class="header_search_submit" value="">
+                            </form>*@
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+              <!--  <div class="header_menu">
+                    <a href="http://bhp.by/about/" class="menu_item_href first">
+                        <div class="menu_item first"></div>
+                        <div class="menu_item first_item">О нас</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/catalog/" class="menu_item_href                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/news/" class="menu_item_href">
+                        <div class="menu_item">новости</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/partners/" class="menu_item_href">
+                        <div class="menu_item">партнерам</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/vacancy/" class="menu_item_href">
+                        <div class="menu_item">вакансии</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/contacts/" class="menu_item_href last">
+                        <div class="menu_item last_item">контакты</div>
+                        <div class="menu_item last"></div>
+                    </a>
+                    <div class="clear"></div>
+                </div> -->
+            </div>
+    <div class="center-y" >
+        <div class="b_page" id="wrapper">
+            <div id="hdr">
+                <div class="logotype"><a href="http://zakazhiobed.ru/"></a></div>
+                <div class="right">
+                    <div class="topinfo">
+                        
+
+                        <div class="rever">
+                            <div class="rghtrever">
+                                <a id="basket" href="#"></a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="footerbg2"">
+
+                <div class="container" id="cpages">
+
+                    <div class="content_page" style="margin-top:20px;">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ftr">
+           @* <div class="footercontent">
+                <div class="footer1left">
+                    <div class="title"></div>
+                </div>
+                <div class="footer1right">
+                    <div class="block">
+                        <div class="title">О компании</div>
+                        <ul>
+                            <li><a href="http://zakazhiobed.ru/page/Rekvizity-OOO-Zakazhi-Obed" title="Реквизиты ООО &quot;Закажи Обед&quot;">Реквизиты</a></li>
+                            <li class="last"><a href="http://zakazhiobed.ru/page/Doska-pocheta" title="Доска почета">Доска почета</a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <div class="title">Вакансии</div>
+                        <ul>
+                            <li><a href="http://zakazhiobed.ru/page/Vakansija-Povar-universal" title="Вакансия: повар-универсал">Повар-универсал</a></li>
+                            <li><a href="http://zakazhiobed.ru/page/Vakansija-voditel-na-dostavku" title="Вакансия: водитель на доставку">Водитель на доставку</a></li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <div class="title">Сотрудничество</div>
+                        <ul>
+                            <li class="last"><a href="http://zakazhiobed.ru/page/Predprijatijam-obshhestvennogo-pitanija" title="Возьмем в аренду помещение под столовую">Возьмем в аренду помещение под столовую</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="ftrlogo">
+                    <a href="http://zakazhiobed.ru/">
+                        <img src="/Content/ftrlogo.jpg" alt=""></a>
+                </div>
+                <div class="ftrcopy">© 2014 Закажи Обед ООО «Закажи Обед» Все права защищены.<br>
+                    г. Челябинск (351) 2-777-300 E-mail: info@zakazhiobed.ru</div>
+
+            </div>*@
+        </div>
+    </div>
+    <script async="1" type="text/javascript" src="/Content/c.js"></script>
+
+
+
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"></div>
+    <div class="b-share-popup-wrap b-share-popup-wrap_state_hidden" id="ya-share-0.1963130331132561-1405245439225-popup">
+        <div class="b-share-popup b-share-popup_down b-share-popup_to-right">
+            <div class="b-share-popup__i">
+                
+            <div class="b-share-popup__tail"></div>
+        </div>
+    </div>
+</body>
+</html>

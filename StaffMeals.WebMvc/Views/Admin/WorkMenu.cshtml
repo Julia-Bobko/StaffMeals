@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "WorkMenu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>fghjk</title>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+</head>
+<body>
+    <div>
+        <div>
+            <h3 style="float: initial">Меню</h3>
+            </br>
+            <div>@Html.ActionLink("Просмотреть меню", "ShowMenu", "Meals")</div>
+            <div>@Html.ActionLink("Cоздать меню", "CountOrder", "Admin")
+            <div>@Html.ActionLink("Изменить меню", "EditingMenu", "Meals")</div>
+            <div>@Html.ActionLink("Cписок заказов на сегодня", "CountOrder", "Admin")
+        </div>      
+        </div>
+    </div>
+</body>
+</html>

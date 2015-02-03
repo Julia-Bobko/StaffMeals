@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Rating" content="General" />
+    <meta name="Owner" content="" />
+    <meta name="Publisher_Name" content="">
+    <meta name="Publisher_Location" content="RU" />
+    <meta name="author" content="IT-kreativ.by" />
+
+    <meta name="copyright" content="" />
+    <meta name="Reply-To" content="info@site.by" />
+    <meta name="Address" content="" />
+    <meta name="Home_Url" content="http://" />
+    <meta name="Robots" content="index,follow,ALL" />
+    <meta name="Revisit" content="3 days" />
+    <meta name="Revisit-After" content="3 days" />
+    <title>@ViewBag.Title — приложение ASP.NET MVC</title>
+
+    <link href="~/Content/article_styles.css" media="all" type="text/css" rel="stylesheet" />
+    <link href="~/Content/style.css" media="all" type="text/css" rel="stylesheet" />
+
+    <link href="~/Content/helioscond.css" type="text/css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.simplemodal.1.4.3.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/fns.js" type="text/javascript"></script>
+
+
+
+
+    @*@Styles.Render("~/Content/css/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body>
+
+    <div id="enter" class="enter_form">
+        <div class="modal_form_title">Вход</div>
+        <div class="close_form simplemodal-close"></div>
+        <form method="post" id="enter_form">
+            <input type="hidden" name="enter" value="yes">
+            <input class="enter_input email" type="text" name="login">
+            <input class="enter_input password" type="password" name="password">
+        </form>
+        <div style="margin-top: 7px;">
+            <a href="" onclick="return show_object(&#39;registration&#39;);" class="enter_form_href registr">Регистрация</a>
+            <div class="registration_separator"></div>
+            <a class="enter_form_href">Забыли пароль</a>
+            <span>?</span>
+            <div class="clear"></div>
+        </div>
+        <div class="enter_form_button" onclick="return submit_form(&#39;enter&#39;);"></div>
+    </div>
+    <div id="message" class="enter_form">
+        <div class="close_form simplemodal-close"></div>
+        <div id="mess_text" class="message_text"></div>
+    </div>
+
+
+    <div class="karkas_top">
+        <div class="header">
+           @* <a href="http://bhp.by/" class="logo"></a>*@
+            <div class="header_right">
+                <div class="header_rigth_top">
+
+                    
+                    
+                   @* <div class="header_lang">
+                        <a href="http://bhp.by/" class="header_lang_href"></a>
+                    </div>*@
+                    <div style="float: left;">
+                        <div class="header_registration">
+                            <div class="header_registration_picture"></div>
+                            @*<a href="" onclick="return show_object(&#39;enter&#39;);" class="header_registration_href">вход</a>*@
+                            @Html.ActionLink("Вход", "AuthorizeIndex", "Account", null, new { @class = "header_registration_href" })
+                            <div class="header_registration_separator"></div>
+                            @*  <a href="" onclick="return show_object(&#39;registration&#39;);" class="header_registration_href">регистрация</a>*@
+                            @Html.ActionLink("Регистрация", "RegisterIndex", "Account", null, new { @class = "header_registration_href" })
+                            <div class="clear"></div>
+                        </div>
+                        @*<div class="header_search">
+                            <form method="post" action="http://bhp.by/search/">
+                                <input type="text" name="search" class="header_search_form" value="Поиск по сайту..." onfocus="if ( &#39;Поиск по сайту...&#39; == value ) { value = &#39;&#39;; } " onblur="if ( &#39;&#39; == value ) { value = &#39;Поиск по сайту...&#39;; }">
+                                <input type="submit" class="header_search_submit" value="">
+                            </form>*@
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+              <!--  <div class="header_menu">
+                    <a href="http://bhp.by/about/" class="menu_item_href first">
+                        <div class="menu_item first"></div>
+                        <div class="menu_item first_item">О нас</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/catalog/" class="menu_item_href">
+                        <div class="menu_item">Каталог продукции</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/news/" class="menu_item_href">
+                        <div class="menu_item">новости</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/partners/" class="menu_item_href">
+                        <div class="menu_item">партнерам</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/vacancy/" class="menu_item_href">
+                        <div class="menu_item">вакансии</div>
+                    </a>
+                    <div class="menu_item separator"></div>
+                    <a href="http://bhp.by/contacts/" class="menu_item_href last">
+                        <div class="menu_item last_item">контакты</div>
+                        <div class="menu_item last"></div>
+                    </a>
+                    <div class="clear"></div>
+                </div> -->
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="content">
+          @*  <div class="left_col" style="padding-top: 4px;">
+
+                <div class="left_col_menu" style="margin-bottom: 20px;">
+                    <div class="left_col_menu_header">О нас</div>
+                   
+                    <div class="left_col_menu_separator"></div>
+                    <div class="left_col_menu_item">
+                        <a href="http://bhp.by/about/magaziny/" class="left_menu_link">Фирменная сеть магазинов</a>
+                    </div>
+                    <div class="left_col_menu_bottom"></div>
+                </div>
+
+
+
+               
+                <div class="inside_content_right">
+                    <div class="inside_letter_form">
+                        <form method="post" id="newsletter_form">
+                            <input type="hidden" name="sub_news_address" value="yes">
+                            <input type="text" class="letter_form_text" name="email_news_address" value="Введите ваш e-mail" onfocus="if ( &#39;Введите ваш e-mail&#39; == value ) { value = &#39;&#39;; } " onblur="if ( &#39;&#39; == value ) { value = &#39;Введите ваш e-mail&#39;; }">
+                            <input type="submit" class="letter_form_submit" value="">
+                        </form>
+                    </div>
+                </div>
+
+            </div>*@
+
+
+
+            <div class="right_col" style="margin-left:200px !important; margin-top:50px !important"> 
+                <div class="catalog_box_group">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3 style="float: initial">Меню</h3>
+            <br>
+            <div>@Html.ActionLink("Просмотреть меню", "ShowMenu", "Meals")</div>
+            <div>@Html.ActionLink("Изменить меню", "EditingMenu", "Meals")</div>
+            <div>@Html.ActionLink("Cписок заказов на сегодня", "CountOrder", "Admin")
+        </div>  
+                            </td>
+                            <td>
+                                 @RenderBody()
+                            </td>
+                        </tr>
+                    </table>   
+                </div>
+             </div>
+
+ 
+
+    <!--end karkas_top-->
+
+
+    <div class="karkas_inside">
+    </div>
+    <!--.karkas_inside-->
+
+
+
+
+
+
+    <div id="pusher">
+        <img src="./images/spacer.gif" border="0" alt="">
+    </div>
+    <!--karkas_bottom-->
+    <div class="karkas_bottom">
+        <div class="footer">
+         
+            <div class="footer_center">
+                <div class="footer_text1">
+                                      
+                </div>
+                <div class="footer_text2">
+                    
+
+                </div>
+
+            </div>
+            <div class="footer_right">
+                <div class="footer_logo"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--karkas_bottom-->
+
+    <script language="JavaScript" type="text/javascript">
+
+
+        jQuery(document).ready(function () {
+
+
+
+        })
+    </script>
+
+
+
+</body>
+</html>

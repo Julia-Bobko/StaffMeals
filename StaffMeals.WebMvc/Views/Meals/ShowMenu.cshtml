@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "ShowMenu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>fghjk</title>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+</head>
+<body>
+    <div>
+        <span>Меню</span>
+        @(Html.Kendo()
+            .Grid<StaffMeals.Entities.FullMenu>()
+            .Name("gridMenuToday")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена тыс.руб.");
+            }
+                    )
+            .DataSource(dataSource => dataSource.Ajax().Read(read => read.Action("MenuRead", "Meals"))
+            )
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+</body>
+</html>

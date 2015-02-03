@@ -1,0 +1,1167 @@
+/*Albka*//*Albka*//*Albka*/
+#footerbg1 { margin:0 auto; width:960px; margin-top:80px; }  
+.num, .contm p a span.num, .contm p a span span  { color:#950501; }
+.orderStageDelivery td.cell3          {width:200px;white-space:nowrap;text-align:right;font-size:1.5em;color:#950501;}
+.rever ul li { min-width:210px; }
+.tr6 .ceil1 input.paymentFormTbodySubmitButton { font-size:11px; padding-left:15px; padding-top:2px; text-align:left; }
+.rever ul li .num { color:#FFF; margin:0 0 0 5px; padding:0; }
+.goodsDataMainModificationPriceNow .num { padding-left: 30px; font:normal 22px "Trebuchet MS", Arial, Helvetica, sans-serif;  } 
+.goodsDataMainModificationPriceNow span { color:#000 ;}
+.goodsDataMainModificationPriceOld .num { font:normal 22px "Trebuchet MS", Arial, Helvetica, sans-serif; }
+.goodsListItemPriceNew a  { color:#000; }
+.goodsListItemPriceOld a, .goodsListItemPriceOld a .num  { color:#4e4e4e; font-style:normal;  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;  }
+.cartFormTbody td.cell4               {text-align:right;font-size:1.3em;color:#000;}
+.cartFormTbody td.cell5               {text-align:right;font-size:1.3em;color:#000;}
+.cartFormTfootSumTable .cell2         {text-align:right;color:#000;}
+ .listing .imagem:hover{border:1px solid #950501;}
+#title { background:#f2f4f5; }
+#site-path { margin:10px 0 0px 0; clear:both; width:650px;}
+#site-path a { font:normal 14px PT Sans Narrow, sans-serif; color:#707375; text-decoration:underline;  }
+#site-path .current { font:normal 14px PT Sans Narrow, sans-serif; color:#950501; text-decoration:none; }
+/*Albka*//*Albka*//*Albka*/
+/* Рамка для интерактивных элементов */
+.withBorder                 {border:1px solid #E5E5E5 !important;}
+.withBorder:hover           {border-color:#950501 !important;}
+.valignMiddle               {vertical-align:middle !important;}
+.valignTop                  {vertical-align:top !important;}
+.alignCenter                {text-align:center !important;}
+.alignRight                 {text-align:right !important;}
+.alignLeft                 {text-align:left !important;}
+label.invalidInput          {display:block;color:#b85454;height:auto;WIDTH:auto;font-size:0.8em !important;font-weight:normal;margin-top:0px;}
+input.invalidInput           {border:1px solid #b85454 !important;background-color: #FFECE6 !important;}
+.errorMessage               {color:#d00000;}
+.green                      {color:#ec333a;}
+/* !rounded corners -------------------------------------------------------------- */
+.cornerAll                  {-moz-border-radius:5px;-webkit-border-radius:5px;}
+input.cornerAll, textarea.cornerAll  {border:1px solid #cccccc;}
+/* ! js ссылки с пунктирным подчеркиванием */
+.jsAction       {border-bottom:1px dashed;}
+.jsAction:hover {border-bottom:1px solid;text-decoration:none;}
+/* Для цифр */
+.num                        {font:normal 16px "Trebuchet MS", Arial, Helvetica, sans-serif; white-space: nowrap;}
+/* Цвета */
+.red                        {color:red;}
+.green                      {color:#000;}
+.lineThrough                {text-decoration:line-through !important;}
+body {  width:100%;    }
+.b_page { width:100%;    } 
+/*Typography*/
+body { background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bg.jpg) top center repeat;  
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h2 {
+font:normal 23px/23px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #436928;
+}
+h3 {
+  font:normal 20px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #333;
+}
+h3 img {
+  margin:0px;
+  vertical-align: middle;
+  padding: 0px 10px 0px 0px;
+}
+h4 {
+  font:normal 17px/17px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #333;
+}
+h5 {
+  font: bold normal 15px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #006699;
+}
+h6 {
+  font:normal 10px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #999;
+  margin: 5px 0px 10px;
+}
+h6 img {
+  margin:0px;
+  vertical-align: middle;
+  padding: 0px 5px 0px 0px;
+}
+h7 {
+  font:normal 18px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FF0000;
+}
+h17 {
+  font:normal 28px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FF0000;
+}
+p {
+  font:normal 12px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #666;
+  margin: 10px 0px;
+}
+/*images*/
+.p-img {
+  margin: 0px 10px 0px 0px;
+  padding: 1px;
+  border: 1px solid #CCC;
+}
+.tel {
+  font:normal 30px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #006699;
+  background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/tel-bg.jpg) no-repeat center center;
+  height: 40px;
+  width: 280px;
+  text-align: center;
+}
+/*images*/
+/*Typography*/
+/*links*/
+a {
+  color: #273f18;
+  text-decoration: none;
+  font-style:oblique
+;
+  
+}
+a:hover {
+  color: #384432;
+  text-decoration: underline;
+}
+.more-link , a.read-more, .paymentFormTbodySubmitButton {
+  font:normal 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button.jpg") no-repeat;
+  height: 33px;
+  width: 149px;
+padding-top:7px;
+  padding-left:17px;
+  display: inline-block;
+}
+.more-link:hover , a.read-more:hover, .paymentFormTbodySubmitButton:hover {
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button2.jpg") no-repeat; color:#FFF;  text-decoration: none;text-decoration:
+} 
+.more-link:active , a.read-more:active, .paymentFormTbodySubmitButton:active {
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button3.jpg") no-repeat; color:#FFF;  text-decoration: none;
+} 
+input.more-link, .paymentFormTbodySubmitButton {
+  width:152px;
+  border:0px;
+  height:40px; 
+ padding:0; 
+padding-left:20px;
+font:normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding-bottom:5px;
+  text-align:left;
+}
+.more-link.back {
+    background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button.jpg") no-repeat;
+  padding-left:30px;
+}
+.more-link.onlybutton, .paymentFormTbodySubmitButton {
+    background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button.jpg") no-repeat;
+  text-align:center;
+}
+.more-link2 , a.read-more, .paymentFormTbodySubmitButton {
+  font:normal 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button11.jpg") no-repeat;
+  height: 33px;
+  width: 149px;
+padding-top:7px;
+  padding-left:17px;
+  display: inline-block;
+}
+.more-link2:hover , a.read-more:hover, .paymentFormTbodySubmitButton:hover {
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button22.jpg") no-repeat; color:#FFF;  text-decoration: none;text-decoration:
+} 
+.more-link2:active , a.read-more:active, .paymentFormTbodySubmitButton:active {
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button33.jpg") no-repeat; color:#FFF;  text-decoration: none;
+} 
+input.more-link2, .paymentFormTbodySubmitButton {
+  width:152px;
+  border:0px;
+  height:40px; 
+ padding:0; 
+padding-left:20px;
+font:normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding-bottom:5px;
+  text-align:left;
+}
+.more-link2.back {
+    background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button11.jpg") no-repeat;
+  padding-left:30px;
+}
+.more-link2.onlybutton, .paymentFormTbodySubmitButton {
+    background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button11.jpg") no-repeat;
+  text-align:center;
+}
+a.readmore {
+  font:normal 17px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button.jpg") no-repeat;
+  height: 33px;
+  width: 131px;
+padding-top:7px;
+  padding-left:21px;
+  display: block;}
+  a.readmore:hover{color: #fff; background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button2.jpg") no-repeat;}
+ a.readmore:active{color: #fff; background: url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/button3.jpg") no-repeat;}
+/*links*/
+/*layout*/
+.container {position:relative; width:1090px; margin: 0px auto;}
+.containerin {width:1112px; margin: 0px auto; }
+.cont700 {width:700px; padding-left:30px;}
+.cont480 {width: 480px;}
+.cont400 {width: 400px;}
+.cont320 {width: 320px;}
+.cont300 {width: 300px;}
+.cont250 {width: 250px;}
+.cont200 {width: 200px;}
+.cont130 {width: 130px;}
+.left {
+  display: inline;
+  float: left;
+  position: relative;  
+}
+.right {
+  display: inline;
+  float: right;
+  position: relative;
+  text-align: right;
+}
+.dad-box {
+  display: inline;
+  float: left;
+  margin-left:5px;
+  margin-right: 10px;
+}
+.asfd {  background:#f2f4f5; }
+.pad-box {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pad-box-r {
+  display: inline;
+  float: right;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pad-box-n {  display: inline;
+  float: left;}
+#logo {
+  height: 134px;
+}
+#logo h1 a{
+  height: 110px;
+  width: 150px;
+  margin-top: 10px;
+  display:block;
+} #logo h1 a span {
+  display: none;
+}
+.page-headline {}
+.page-headline h1 {
+ width:700px;
+  font:normal 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #11191c;
+  padding-top:10px;
+   padding-bottom:10px;
+  padding-left:10px;
+}
+#cpages  {
+   
+}
+#content {
+  
+}
+.content-home {
+  background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/content_home_bg.jpg) no-repeat 317px 20px;
+}
+.content_page {
+  padding:0 70px;
+  overflow:hidden;  
+  padding-bottom: 150px;
+  min-height:1300px;
+}
+.content_catalog {
+  vertical-align:top;
+}
+/* Каталог навигации по категориям на странице списка товаров */
+.content_catalog_nested_categories li {
+  text-align:center;
+  float:left;
+  width:135px;
+  height:135px;
+  overflow:hidden;
+  padding:1em;
+  margin:0px;
+  list-style-type:none;
+  background:none !important;
+}
+.content_body {
+  vertical-align:top;
+}
+.content-home h3 {
+  padding: 15px 0px;
+}
+.contact-block {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.sigle {}
+.sigle  .cont-left {
+  float: left;
+   width: 220px;
+}
+.sigle .imageright {
+  text-align: center;
+  float: right;
+  width: 220px;
+  margin: 0px 10px 10px;
+} .sigle .imageright img {
+  border: 1px solid #D6D6D6;
+}
+.imageright .sns{padding-top: 10px;}
+.imageright .sns a{
+color: #036;
+  background: #EBF5FE;
+  border: 1px solid #ABE3FE;
+  text-decoration: none;
+  display: block;
+  line-height: 30px;
+}
+.imageright .sns a:hover {
+  color: #C60;
+  background: #FFC;
+  border: 1px solid #FFE19B;
+}
+/*Layout*/
+#footer {
+  background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/footer.png) center top no-repeat;
+ height:166px;
+  margin: 0px auto;
+  width:100%;
+ overflow:hidden;
+margin-bottom:-25px;
+text-align:center;
+}
+#footer p {
+  margin:0px;
+  font-size: 10px;
+  line-height: 18px;
+ font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#fff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);text-align:center;
+}
+/*menu*/
+  /*main menu*/
+  #top-menu {height: 40px;overflow: hidden;} #mainmenu li, #langmenu li  { display:inline;}
+  #mainmenu li a{
+  font: bold 12px/40px Helvetica, Tahoma, Arial, sans-serif;
+  color: #FFF;
+  display: block;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/tm_link_border.gif) no-repeat right top; }
+  #mainmenu li a:hover {
+  background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/tm_link_border.gif) repeat-x center bottom;
+  }
+  #mainmenu li a.home {}
+  #langmenu li a {
+  float: right;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+#footer { font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#fff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); } 
+#footer a { font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#fff;  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);  } 
+#footer #left { text-align:center; }
+#footer #left ul li{
+  display: inline;
+font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#fff;
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: 1px solid #666;
+}
+ul.leftmenu  {
+}
+.leftmenu ul {padding:0px}
+.leftmenu li h2 a {font:bold 22px "Trebuchet MS", Arial, Helvetica, sans-serif; display:block; color:#779626; text-decoration:none; padding:50px 20px 10px 10px;}
+.leftmenu li li  { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/leftmenu.jpg) bottom center no-repeat; width:215px; padding:0px 0px 10px 15px;  font:normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#667f09; }
+.leftmenu li li a {  font:normal 19px PT Sans Narrow, sans-serif; color:#000; display:block; text-decoration:none; }
+.leftmenu li li a.selected {  font:bold 19px PT Sans Narrow, sans-serif;   }  
+ .leftmenu li li a:hover { text-decoration:underline; }
+/*menu*/
+/*product listing*/
+.listing {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/hrbg.gif) no-repeat left bottom;
+}
+.listing a img { border:none;} 
+.listing .image {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 110px;
+  margin-right: 10px;
+  border: 1px solid #D6D6D6;
+  text-align: center;
+  background: #FFF;
+  padding: 1px;
+}
+.listing .cont {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 480px;
+}
+.listing .container {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 665px;
+}
+.listing .imagem {  position: relative;
+  display: inline;
+  float: left;
+  width: 220px;
+  margin-right: 10px;
+  border: 1px solid #D6D6D6;
+  text-align: center;
+  background: #FFF;
+  padding: 1px;}
+.listing .imagem a {display:block;}
+.listing .contm {position: relative;
+  display: inline;
+  float: left;
+  width: 435px;
+}
+.listing .contm a span span     {color: #390;font-weight:bold;}
+.listing .contm .lineThrough,
+.listing .contm .lineThrough span span  {color: #888;font-weight:normal;}
+.listing .contm .listingDiscountInfo {color: #000;font-size:12px;}
+   
+    /*forms*/
+/*search*/
+#search{
+  height: 35px;
+  float: right;
+  padding-top: 45px;
+  padding-right: 15px;
+  width: 245px;
+} #search .search_box  {
+  background:none;
+  border:none;
+  font: 11px Verdana, Geneva, sans-serif;
+  width: 200px;
+  padding:0px;padding-left: 14px;
+  padding-top: 8px;
+  
+}
+#search .submit {
+  cursor:pointer;
+  height: 28px;
+  width: 28px;
+}
+/*search*/
+/*cartInfo*/
+#cartInfo {
+  position:absolute;
+  font-size: 13px;
+  top: 54px;
+  left: 380px;
+  white-space:nowrap;
+  overflow:hidden;
+  height:20px;
+  width: 340px;
+}
+#cartInfo a {
+  color:#000;
+  text-transform: uppercase;
+  padding:5px 0px 5px 45px;
+}
+/*cartInfo*/
+/*contactInfo*/
+#contactInfo {
+  position:absolute;
+  font-size:1.1em;
+  top: 10px;
+  left: 170px;
+}
+.contactInfoContent {
+  height:100px;
+  width: 180px;
+  vertical-align:middle;
+}
+/*contactInfo*/
+p.small {
+  font: 10px Verdana, Geneva, sans-serif;
+  text-align: center;
+  margin: -10px 0px 0px;
+  padding: 0px;
+}
+/*page pagination*/
+.pagination {
+  font: 12px Verdana, Geneva, sans-serif;
+  color: #666;
+  display: block;
+  padding: 10px 0px;
+}
+.pagination a {
+color: #036;
+  background: #b1b62e;
+  border: 1px solid #9aa31d;
+  margin-right:4px;
+  padding:3px 6px;
+  text-align:center;
+  text-decoration:none;
+}
+.pagination a:hover, .pp-paginate a:active {
+  color: #000000;
+  background: #b0b52c;
+  border: 1px solid #626262;
+}
+.pagination .pp-title {
+  color: #036;
+  background: #b1b62e;
+  border: 1px solid #9aa31d;
+  margin-right:4px;
+  padding:3px 6px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.pagination .pp-gap {color:#999; margin-right:4px;}
+.pagination .pp-current {
+  color:#fff;
+  background:#94100d;
+  border:1px solid #94100d;
+  margin-right:4px;
+  padding:3px 6px;
+}
+.pagination .pp-page {}
+.pagination .pp-prev, .pp-paginate .pp-next {}
+.hiden { overflow:hidden;}
+#prev span, #next span { color:#ccc; } /* lighter than the normal anchor text */
+/*futured*/
+.futured h2 {
+  font: 25px/35px Arial, Helvetica, sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.futured p {color: #000;}
+/* Новости в блоке навигации справа */
+.contentTbodyNews {padding-left:0.7em;}
+.contentTbodyNewsArchive {font-size:0.85em;}
+.newsListBlockItemPreview {margin:.3em 0 .3em 0;}
+.contentTbodyNewsBlockItemTime {font-size:0.75em;color:#999;}
+.contentTbodyNewsBlockItem {font-size:0.8em;margin-bottom:1em;}
+.newsListBlockItemPreview {color:#666;}
+/* страница списка новостей */
+.newsListBlockItem {padding-bottom:1em;font-size:12px;}
+.newsListBlockItemTitle {font-size:1.1em;}
+.newsListBlockItemPreview {margin:0.3em 0em 0em 0em;}
+.newsListBlockItemTime {font-size:0.9em;color:#888;}
+/* Страница новости */
+.newsListBlockItemTitle {font-size:1.33em;}
+.newsListBlockItemPreview {margin:0.3em 0em 0.3em 0em;}
+.newsListBlockItemTime {font-size:0.9em;color:#888;}
+.newsListBlockItemFiles {margin:1em 0 1em 0;}
+.newsListBlockItemFiles td {padding:3px;}
+/* Иконки форматов файлов */
+.file_extension_icon        {width:16px;height:16px;display:block;background:#ffffff url("http://design.xn--80aedbwa1amfimfn.xn--p1ai/icons-files-extensions.gif") no-repeat left top;}
+.file_extension_icon.torrent{background-position:-16px 0px}
+.file_extension_icon.xls    {background-position:-32px 0px}
+.file_extension_icon.ie7    {background-position:-48px 0px}
+.file_extension_icon.ppt    {background-position:-64px 0px}
+.file_extension_icon.htm,
+.file_extension_icon.html   {background-position:0px -16px}
+.file_extension_icon.avi    {background-position:-16px -16px}
+.file_extension_icon.bmp,
+.file_extension_icon.gif    {background-position:-32px -16px}
+.file_extension_icon.js,
+.file_extension_icon.css,
+.file_extension_icon.txt    {background-position:-48px -16px}
+.file_extension_icon.pptm    {background-position:-64px -16px}
+.file_extension_icon.rtf,
+.file_extension_icon.doc    {background-position:0px -32px}
+.file_extension_icon.jpg    {background-position:-16px -32px}
+.file_extension_icon.png    {background-position:-32px -32px}
+.file_extension_icon.ini    {background-position:-48px -32px}
+.file_extension_icon.pptx   {background-position:-64px -32px}
+.file_extension_icon.php    {background-position:0px -48px}
+.file_extension_icon.mht,
+.file_extension_icon.mhtml  {background-position:-16px -48px}
+.file_extension_icon.psd    {background-position:-32px -48px}
+.file_extension_icon.zip    {background-position:-48px -48px}
+.file_extension_icon.xps    {background-position:-64px -48px}
+.file_extension_icon.exe    {background-position:0px -64px}
+.file_extension_icon.xml    {background-position:-16px -64px}
+.file_extension_icon.wma,
+.file_extension_icon.mp3    {background-position:-32px -64px}
+.file_extension_icon.xlsx   {background-position:-48px -64px}
+.file_extension_icon.xlsb   {background-position:-64px -64px}
+.file_extension_icon.pdf    {background-position:0px -80px}
+.file_extension_icon.csv    {background-position:-16px -80px}
+.file_extension_icon.docx   {background-position:-32px -80px}
+.file_extension_icon.accdb  {background-position:-48px -80px}
+.file_extension_icon.xlsm   {background-position:-64px -80px}
+.file_extension_icon.dll    {background-position:0px -96px}
+/* END Иконки форматов файлов */
+/* Страница товара. Цена товара */
+.goodsDataMainModificationPriceOld {display:block;}
+/* Страница товара. Характеристики */
+.goodsDataFeatures                  {font-size:12px;}
+.goodsDataFeatures p                {line-height:1.2em;float:left;margin:0.2em 0em 0em 0em;padding:0;width:100%;background:transparent url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100%;}
+.goodsDataFeatures p span           {line-height:1.2em;border-bottom:1px solid #FFFFFF;background:#FFFFFF none repeat scroll 0 0;color:#A9A9A9;}
+/* Страница товара. Основные данные */
+.goodsDataMain td                   {vertical-align:top}
+.goodsDataMainImageBlock            {width:200px; overflow:hidden; }
+.goodsDataMainImageBlock img        {padding:2px;}
+.goodsDataMainImagesIcon            {width:46px;height:46px;margin:0.2em 0.4em 0.2em 0em;}
+.goodsDataMainImagesIcon img        {padding:2px;}
+.goodsDataMainImageZoom             {text-align:center;padding:0.5em;}
+.goodsDataMainImageZoom a           {padding:5px 0px 5px 25px;background:transparent url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/zoom-magnifying.png') no-repeat scroll center left;}
+.goodsDataMainModificationDataBlock,
+.goodsDataMainModificationsBlock,
+.goodsDataMainDiscountBlock,
+.goodsDataMainDeliveryBlock,
+.goodsDataFormSubmitButton,
+.goodsDataMainModificationsDescriptionBlock          {padding:1em; max-width:400px; }
+/* Страница товара. Акция на товар */
+.goodsDataMainDiscountBlock {line-height:1.5em;}
+.goodsDataMainModificationsBlockProperty {padding:5px;}
+.goodsDataMainModificationsBlockProperty select {width:auto;}
+.goodsHeader h1,
+.goodsDataForm h4,
+.goodsDataForm h5                   {margin-top:0px;padding:0px;line-height:1.2em;}
+.goodsDataForm h3                   {margin-top:1.5em;line-height:1.2em;}
+.goodsDataForm table                {margin:0px;}
+.goodsDataMainModificationsList     {display:none;}
+.goodsDataMainModificationData      {width:240px;vertical-align:middle;}
+.goodsDataMainModificationPriceNow  {font-size:1.3em;color:#F2912D;margin:0px;margin-left:-30px;white-space:nowrap;}
+.goodsDataMainModificationAvailable {padding-top:0.3em;font-size:0.9em;white-space:nowrap;}
+.goodsDataMainModificationArtNumber  {padding-bottom:1em;}
+/* Страница товара. Информация о заказе */
+.goodsDataMainOrder                 {border:1px solid #E5E5E5; width:600px; margin-left:1em;}
+/* Страница товара. Кнопка положить в корзину */
+.goodsDataFormSubmitButton          {vertical-align:middle;}
+.goodsDataFormSubmitButton input    {margin:0.5em;}
+/* Страница товара. Информация о доставке */
+.goodsDataMainModificationsBlock,
+.goodsDataMainDeliveryBlock,
+.goodsDataMainDiscountBlock,
+.goodsDataMainModificationsDescriptionBlock {border-top:1px solid #E5E5E5;font-size:0.8em;}
+.goodsDataMainDeliveryBlock h5          {font-size:0.9em;padding-bottom:0.5em;}
+.goodsDataMainDeliveryItemHeader        {padding:1em 0em 0.5em 0.3em;color:#555;}
+.goodsDataMainDeliveryItem              {padding:0em 1em 0em 1em; max-width:400px; }
+.goodsDataMainDeliveryItemRules tbody td{ padding:2px;line-height:1.2em; max-width:400px;}
+.goodsDataMainDeliveryItemRules caption {text-align:left;}
+.goodsDataMainDeliveryItemRules caption h5 {font-style: normal;}
+.goodsDataMainDeliveryItemRules p       {float:left;margin:0;padding:0;line-height:1.4em;width:100%;background:transparent url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100%;}
+.goodsDataMainDeliveryItemRules p span  {border-bottom:1px solid #ffffff;color:#666666;}
+/* Корзина. Шапка таблицы */
+.cartFormTable                        {width:100%;font-size:12px;}
+.cartFormThead th                     {padding:0.5em;font-weight:bold;white-space:nowrap;text-align:center;}
+/* Корзина. Позиции заказа */
+.cartFormTbody td                     {padding:0.66em;vertical-align:middle;background:url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100% transparent;}
+.cartFormTbody td.cell1               {text-align:center;}
+.cartFormTbody td.cell2               {width:500px;vertical-align:top;}
+.cartFormTbodyNavigate a              {color:#888;}
+.cartFormTbodyHeader                  {color:#000;font-size:1.1em;}
+.cartFormTbodyHeader span             {color:#666;font-size:0.9em;}
+.cartFormTbody td.cell3               {white-space:nowrap;}
+.cartFormTbody td.cell3 input         {width:50px;text-align:center;}
+.cartFormTbody td.cell6               {text-align:center;}
+/* Корзина. Низ таблицы заказа */
+.cartFormTfootSumTable                {float:right;font-size:1.5em;margin:0.5em 0em 0.5em 0em}
+.cartFormTfootSumTable .cell1         {vertical-align:top;}
+.cartFormTfootTruncate                {text-align:left;vertical-align:middle;white-space:nowrap;}
+.cartFormTfootButtons                 {text-align:right;}
+/* Оформление заказа. Общие настройки */
+.orderData,
+.order                                {padding:0em 1em 0em 0.8em;margin:0em 0em 1em 0em;width:650px;}
+.order h3                             {margin:0.5em 0em 0em 0em;padding-bottom:0.2em;background:url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100% transparent;}
+.orderInfo                            {padding:1em;}
+.orderInfo table                      {margin-top:0.5em;}
+/* Оформление заказа. Контактная информация */
+.orderStageContact table              {width:100%;}
+.orderStageContact td.cell1           {width:200px;white-space:nowrap;padding:1em 1em 0em 0em;}
+.orderStageContact td.cell2           {width:auto;}
+.orderStageContact input              {width:90%;}
+.orderStageContact .orderStageContactCheckbox {width:auto;text-align:left;}
+/* Оформление заказа. Ссылка показать пароль */
+.OrderShowPassBlock                   {text-align:left;padding-top:0.1em;}
+.OrderShowPass                        {font-size:1em;color:#888;border-bottom:1px dashed;}
+.OrderShowPass:hover                  {border-bottom:1px solid;text-decoration:none;}
+/* Оформление заказа. Выбор доставки */
+.orderStageDelivery table             {width:100%;margin-bottom:1em;}
+.orderStageDelivery td                {vertical-align:middle;}
+.orderStageDelivery td.cell1          {width:20px;}
+.orderStageDelivery td.cell2          {font-size:14px;padding:10px 0 5px 0;}
+.orderStageDelivery td.cell4          {font-size:12px;color:#888;padding:0 0 5px 0;}
+.orderStageDelivery td.cell5          {font-size:12px;padding:0 0 5px 0;}
+.orderStageDelivery td.cell5 .orderStageDeliveryZoneHeader  {font-size:14px;display:block;padding:10px 0 5px 0;}
+.orderStageDelivery td.cell5 .orderStageDeliveryZoneLabel   {color:#888;font-size:12px;}
+.orderStageDelivery textarea          {width:100%;height:80px;}
+.orderInfoDeliveryAddress input,  
+.orderInfoDeliveryAddress #deliveryCountry {width:150px;}
+#deliveryConvenientDate               {width:75px; text-align:center;}
+.orderInfoDeliveryAddress label       {white-space:nowrap;}
+.orderInfoDeliveryAddress td          {vertical-align:top;padding-right:5px;}
+.orderInfoDeliveryAddress td label    {padding-top:3px;display:block;}
+/* Оформление заказа. Выбор варианта оплаты */
+.orderStagePayment td.cell1           {width:20px;}
+.orderStagePayment td.cell2           {font-size:14px;padding:10px 0 10px 0;}
+/* Оформление заказа. Подтверждение заказа */
+.orderStageConfirmCart,
+.orderStageConfirmContacts            {width:100%;font-size:12px;}
+.orderStageConfirmContactsHeader      {text-align:left !important;}
+.orderStageConfirmContacts .cell1     {width:210px;white-space:nowrap;padding:1em 0em 1em 1em;}
+.orderStageConfirmContacts .cell2     {width:auto;}
+.orderStageConfirmContacts p          {margin:0;padding:0;width:100%;background:transparent url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100%;}
+.orderStageConfirmContacts p span     {border-bottom:1px solid #FFFFFF;background:#FFFFFF none repeat scroll 0 0;color:#666666;}
+.orderStageSubmitNavigation        {padding-top:1em}
+/* Информация по оформленному заказу */
+.orderDataTable                    {width:100%;margin-bottom:2em;}
+.orderDataTable th                 {padding:1em 0em 1em 0em;font-weight:normal;text-align:center;}
+.orderDataTableHeader              {text-align:left !important;}
+.orderDataTable .cell1             {width:210px;white-space:nowrap;padding:1em 0em 1em 0em;vertical-align:top;}
+.orderDataTable .cell2             {width:auto;vertical-align:middle;}
+.orderDataTable p                  {margin:0;padding:0;width:100%;line-height:1.2em;background:transparent url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100%;}
+.orderDataTable p span             {border-bottom:1px solid #FFFFFF;background:#FFFFFF none repeat scroll 0 0;color:#666666;}
+/* Список акции на товары */
+.promotionCampaignList                  {font-size:12px}
+.promotionCampaignInfo                  {width:100%;font-size:12px;}
+.promotionCampaignInfo p                {line-height:1.2em;float:left;line-height:1.4em;margin:0.2em 0em 0em 0em;padding:0;width:100%;background:transparent url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/grey_dotted.gif') repeat-x scroll 0 100%;}
+.promotionCampaignInfo p span           {line-height:1.2em;border-bottom:1px solid #FFFFFF;color:#A9A9A9;}
+.promotionCampaignInfo td               {padding-bottom:5px;}
+.promotionCampaignInfo td.cell1         {width:200px}
+.promotionCampaignInfo td.cell2         {font-size:1.1em;font-weight:bold;}
+/* Форма связи с администрацией */
+.feedbackForm label {font-weight:normal;display:block;font-size: 1.0em;margin:0.2em 0 0.2em 0;}
+.feedbackForm .input {width:300px;}
+.feedbackForm textarea {width:600px;}
+/* Форма оплаты заказа по интернету */
+.paymentFormTbody label                   {font-weight:normal;color:#666666;font-size:12px}
+.paymentFormTbody h4                      {color:#910f0f;font-weight:normal;padding:1em 0 1em 0;}
+.paymentFormTbody input.inputText         {padding:0.2em;width:300px;}
+.paymentFormTbody select                  {padding:0.2em;width:308px;}
+.paymentFormTbody .paymentFormSubmitLink  {font-size:1.3em;}
+.paymentFormTbody .ceil1                  {padding-left:0em;}
+.paymentFormTbody p                       {width:auto;background:none;}
+.paymentBankRu .tr5 .ceil1                {padding-top:1em;}
+.paymentBankRu .tr6 .ceil1                {padding-top:1em;}
+/* Сравнение товаров в блоке навигации слева */
+.contentTbodyCompare {padding-left:0.7em;padding-top:.7em;font-size:0.8em;} 
+.contentTbodyCompareEmpty {color:#888;}
+.contentTbodyCompareDetails {display:block;margin-top:5px;}
+/* Страница сравнения товаров */
+.CompareGoodsTable                        {font-size:11px;}
+.CompareGoodsTable td                     {padding:4px;}
+.CompareGoodsTable .more-link             {text-align:left;}
+.CompareGoodsHeader                       {color:#000;font-size:1.1em;display:block;}
+.CompareGoodsHeader span                  {color:#666;font-size:0.9em;}
+.CompareGoodsTableTbody td                {max-width:400px;text-align:center;padding:4px;}
+.CompareGoodsTableTbody td.borderAll      {border:1px solid #DCECF7;}
+.CompareGoodsTableTbody td.noBorderBottom {border-top:1px solid #DCECF7;border-left:1px solid #DCECF7;border-right:1px solid #DCECF7;}
+.CompareGoodsTableTbody td.BorderLeftAndRight {border-left:1px solid #DCECF7;border-right:1px solid #DCECF7;}
+.CompareGoodsTableTbody .CompareCheckbox,
+.CompareGoodsTableTbody label             {vertical-align:middle;font-weight:normal;}
+.CompareGoodsTableTbody td.ceil1          {text-align:left;vertical-align:bottom;}
+.CompareGoodsTableTbodyComparisonLine.same{color:#888;background:#F0F0F0}
+.CompareGoodsTableTbodyComparisonLine.hover{background:#E1FAE1}
+.CompareGoodsTableTbodyComparisonLine td  {text-align:left;}
+.CompareGoodsTableFilterSelected          {font-weight:bold;color:#000 !important;text-decoration:none;}
+.CompareGoodsTableFilterSelected:hover    {text-decoration:none;cursor:default;color:#000 !important;}
+.CompareGoodsHideSelected                 {display:block;font-size:1.1em;}
+.CompareGoodsShowAll                      {display:block;font-size:1.1em;padding-top:0.5em;}
+.CompareGoodsTableFilter                  {font-size:1.1em;}
+.CompareGoodsDeleteLink                   {display:block;height:15px;width:15px;overflow:hidden;float:right;background: url('http://design.xn--80aedbwa1amfimfn.xn--p1ai/icon-cancel.gif') no-repeat 50% 50%;}
+/* Личный кабинет клиента. Формы авторизации, регистрации, настроек и восстановления пароля */
+.clientForm {font-size:12px;}
+.clientForm td {padding:0.4em;}
+.clientForm h3 {font-size:1.5em;padding-bottom:1em;text-transform: none;}
+.clientForm thead td {padding-bottom:1em;}
+.clientForm tbody td.ceil1 {width:5%;}
+.clientForm tbody td.ceil2 {width:5%;}
+.clientForm tbody label {white-space:nowrap;font-size:1.3em;font-weight:normal;vertical-align:middle;}
+.clientForm tbody input {vertical-align:middle;padding:0.3em;width:220px;}
+.clientForm tbody textarea {width:224px;height:75px;}
+.clientForm tbody .showPassBlock {text-align:center;padding-top:0.1em;}
+.clientForm tbody .showPass {font-size:1em;color:#888;border-bottom:1px dashed;}
+.clientForm tbody .showPass:hover {border-bottom:1px solid;text-decoration:none;}
+.clientForm tfoot td {padding-top:2em;}
+#caps_lock {font-size:11px;width:220px;}
+/* Личный кабинет клиента. История заказов */
+.clientOrderList {padding-bottom:2em;font-size:12px;}
+.clientOrderListTable thead td {font-weight:bold;text-align:center;padding:10px 5px 10px 5px;}
+.clientOrderListTable td {border:1px solid #ccc;padding:5px}
+.clientOrderListTable .second td {background-color:#F5F5F5;}
+/* Личный кабинет клиента. Информация о заказе */
+.clientOrderInfo {padding-bottom:2em;font-size:12px;}
+.clientOrderInfo h2 {padding:0.5em 0 0.5em 0;font-size:1.5em;font-weight:normal;}
+.clientOrderInfoMain {border:1px solid #ccc;padding:1em;}
+.clientOrderInfoMainTb {margin:0px;}
+.clientOrderInfoMainTb td {border:1px solid #ccc;padding:7px;}
+.clientOrderInfoPositions {border:1px solid #ccc;padding:1em;}
+.clientOrderInfoPositionsTb {margin:0px;}
+.clientOrderInfoPositionsTb td {border:1px solid #ccc;padding:7px;}
+/* Заголовки на странице отображения товара */
+.goodsData h3 {margin-top:1em;}
+/* Страница товара. Блок отзывов о товаре */
+.goodsDataOpinion table {font-size:12px;line-height:15px;}
+.goodsDataOpinion table td {padding:0.3em;}
+/* Страница товара. Добавление отзыва о товаре */
+.goodsDataOpinionMsg {margin:0 0 0 20px;white-space:nowrap;}
+.goodsDataOpinionMessage {padding:1em;font-size:1.2em;font-style:normal;border-left:2px solid #b85454;margin:1em;}
+.goodsDataOpinionMessage.empty {margin-left:2em;border-left:2px solid #DCECF7;}
+.goodsDataOpinionMessage.auth {margin-top:0}
+.goodsDataOpinionAddTable {margin-left:1em;}
+.goodsDataOpinionAddTable td {vertical-align:top;padding-right:1em;}
+.goodsDataOpinionAddTable tbody label {white-space:nowrap;font-size:1.3em;font-weight:normal;vertical-align:middle;}
+.goodsDataOpinionAddTable tbody label.required {font-weight:bold;}
+.goodsDataOpinionAddTable tbody input {vertical-align:middle;padding:0.3em;width:420px;}
+.goodsDataOpinionAddTable tbody input.captcha {width:120px;}
+.goodsDataOpinionAddTable tbody textarea {width:424px;height:75px;padding:0.2em;}
+.goodsDataOpinionAddTable tbody .generally input {width:auto;padding:0px;}
+.goodsDataOpinionAddTable tbody .generally label {font-size:1em;}
+.goodsDataOpinionAddTable tfoot td {padding-top:1em;}
+.goodsDataOpinionCaptcha td {padding-left:0px;}
+.goodsDataOpinionAverageInfo {padding-left:1em;vertical-align:middle;}
+/* Страница товара. Список отзывов о товаре */
+.goodsDataOpinionListTableClient {color:#888}
+.goodsDataOpinionListTableClient.auth {color:#555}
+.goodsDataOpinionListTableAnswer {padding:1em;color:#167507}
+.goodsDataOpinionListNavigateBottom td {padding-top:1em;}
+.goodsDataOpinionListTable {width:690px;}
+.goodsDataOpinionListTable td {border-bottom:1px solid #cccccc;padding: 0.5em 1em 0.4em 0;}
+.goodsDataOpinionListTable td.ceil1 {width:20%;}
+.goodsDataOpinionListTable td.ceil2 {width:80%;}
+.goodsDataOpinionListTableDate {display:block;color: #979797;font-size: 0.8em;font-weight: normal;}
+/* Фильтры по товарам в колонке меню */
+.contentTbodySearchFilterBlock              {font-size:0.7em;padding:1em;margin:0;border:1px solid #E5E5E5;}
+.contentTbodySearchFilterBlockHeader        {font-size:1.2em;color: #069;font-weight:bold;}
+.contentTbodySearchFilterBlockValues        {padding:1em 0 1em 1em;}
+.contentTbodySearchFilterBlockValues label  {font-weight:normal;}
+/* Список товаров. Верхняя навигация */
+.goodsListingTopNavigation                  {font-size:0.8em;width:100%;}
+.goodsListingTopNavigation td               {padding-bottom:0.7em;}
+.goodsListingTopNavigation .viewSelector    {padding-left:1em;padding-right:1em;}
+/* Список товаров в виде таблицы. Ячейки с товаром */
+.goodsListItem                      {text-align:center;vertical-align:top;width:195px;overflow:hidden;padding:0px;}   /* Размер в 200 пикселей сделан, чтобы и 2 и 5 товаров нормально смотрелись и была возможность увеличить разрешение до 1220 пикселей*/
+.goodsListItemBlock                 {height:300px;width:210px;margin:5px;overflow:hidden;}
+.goodsListItemBlock a               {}
+.goodsListItemImage                 {height:185px;width:100%;margin-top:1em;border-collapse: collapse;border-spacing: 0;}
+.goodsListItemImage td              {text-align:center;vertical-align:middle;}
+.goodsListItemName                  {line-height:1.2em;padding:0px 2px 0px 2px;margin:0px;max-height:3.6em; overflow:hidden;}
+.goodsListItemName a                {font:normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#435767;line-height:1.2em;padding:0px;margin:0px;}
+.goodsListItemPriceNew a { font:normal 14px "Trebuchet MS", Arial, Helvetica, sans-serif;  }
+  
+ 
+  /* The Nivo Slider styles */
+.nivoSlider {
+  position:relative;
+}
+.nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:0;
+  padding:0;
+  margin:0;
+  z-index:6;
+  display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display:block;
+  position:absolute;
+  z-index:5;
+  height:100%;
+}
+.nivo-box {
+  display:block;
+  position:absolute;
+  z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  background:#000;
+  color:#fff;
+  opacity:0.8; /* Overridden by captionOpacity setting */
+  width:100%;
+  z-index:8;
+}
+.nivo-caption p {
+  padding:5px;
+  margin:0;
+}
+.nivo-caption a {
+  display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position:absolute;
+  top:45%;
+  z-index:9;
+  cursor:pointer;
+}
+.nivo-prevNav {
+  left:0px;
+}
+.nivo-nextNav {
+  right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+  position:relative;
+  z-index:9;
+  cursor:pointer;
+}
+.nivo-controlNav a.active {
+  font-weight:bold;
+}
+.nivoSlider {
+  position:relative;
+    width:618px;
+    height:246px;
+  background:#efe9d1 url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/loading.gif) no-repeat 50% 50%;
+    margin-bottom:80px;
+    -moz-box-shadow:0px 0px 5px #333;
+  -webkit-box-shadow:0px 0px 5px #333;
+  box-shadow:0px 0px 5px #333;
+}
+.nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+}
+.nivoSlider a {
+  border:0;
+  display:block;
+}
+.nivo-directionNav a {
+  display:block;
+  width:30px;
+  height:30px;
+  background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/arrows.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+}
+a.nivo-nextNav {
+  background-position:-30px 0;
+  right:15px;
+}
+a.nivo-prevNav {
+  left:15px;
+}
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+#slider1 .nivo-controlNav,
+#slider2 .nivo-controlNav,
+#slider4 .nivo-controlNav {
+  position:absolute;
+  left:260px;
+  bottom:-42px;
+}
+#slider1 .nivo-controlNav a,
+#slider2 .nivo-controlNav a,
+#slider4 .nivo-controlNav a {
+  display:block;
+  width:22px;
+  height:22px;
+  background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bullets.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+  margin-right:3px;
+  float:left;
+}
+#slider1 .nivo-controlNav a.active,
+#slider2 .nivo-controlNav a.active,
+#slider4 .nivo-controlNav a.active {
+  background-position:0 -22px;
+}
+#slider2 a {
+  display:block; /* IE Fix */
+}
+#slider3 {
+  margin-bottom:110px;
+}
+#slider3 .nivo-controlNav {
+  position:absolute;
+  left:185px;
+  bottom:-70px;
+}
+#slider3 .nivo-controlNav a {
+    display:inline;
+}
+#slider3 .nivo-controlNav img {
+  display:inline;
+  position:relative;
+  margin-right:10px;
+  -moz-box-shadow:0px 0px 5px #333;
+  -webkit-box-shadow:0px 0px 5px #333;
+  box-shadow:0px 0px 5px #333;
+}
+#slider3 .nivo-controlNav a.active img {
+    border:1px solid #000;
+}
+#slider 4 {
+    margin-bottom:0;
+}  #slider {
+    width:618px;
+    height:246px;
+ background:url( http://design.xn--80aedbwa1amfimfn.xn--p1ai/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+}
+#slider a {
+  border:0;
+  display:block;
+}
+.nivo-controlNav {
+  position:absolute;
+  left:260px;
+  bottom:-42px;
+}
+.nivo-controlNav a {
+  display:block;
+  width:22px;
+  height:22px;
+ background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bullets.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+  margin-right:3px;
+  float:left;
+}
+.nivo-controlNav a.active {
+  background-position:0 -22px;
+}
+.nivo-directionNav a {
+  display:block;
+  width:30px;
+  height:30px;
+ background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/arrows.png) no-repeat
+  text-indent:-9999px;
+  border:0;
+}
+a.nivo-nextNav {
+  background-position:-30px 0;
+  right:15px;
+}
+a.nivo-prevNav {
+  left:15px;
+}
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}  
+.contm p a span span.num, .contm p span span  { color:#950501; }
+.htmlDataBlock { max-width:645px;}
+.goodsDataFeatures td { padding-right:15px; }
+.htmlDataBlock p {font-style:normal;color:#000; font:normal 16px  "Trebuchet MS", Cosmic Sans,  Times New Roman, Geneva}
+.htmlDataBlock em {font-size:12px;font-style:normal;color:#000;}
+.htmlDataBlock sub {vertical-align: sub;font-size: smaller;}
+.htmlDataBlock sup {vertical-align: super;font-size: smaller;}
+.htmlDataBlock ol {list-style: disc inside;font-size:12px;color:#000;}
+.htmlDataBlock ul {list-style: disc inside;font-size:12px;color:#000;}
+.goodsDataMainOrder { max-width:400px; }
+#footer #left ul li.last { border:0; }
+.goodsListingTopNavigation, .goodsDataMainModificationAvailable, .contentTbodyNewsArchive, .contentTbodyNewsBlockItemTitle, .newsListBlockItemPreview,  .goodsDataMainModificationPriceOld, .cartFormTable, .goodsDataMainModificationPriceNow, .goodsDataMainImageZoom a, .content_catalog_nested_categories a { font-style:normal; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; }
+.goodsListItemPriceNew span.num, .goodsListItemPriceNew span { color:#3b95fc; }
+.goodsListItemPriceOld span.num, .goodsListItemPriceOld span { font-size:13px; }
+.rever ul li em span span { font-size:11px; }
+.rever ul li em span span.num { font-size:16px; }
+.footerbg2 { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/footerbg2.jpg) bottom center repeat-x;  }
+#ftr { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/footerbg.jpg) repeat; height:220px; font:normal 13px Tahoma, Geneva, sans-serif; color:#727272; overflow:hidden; width:100%; clear:both; }
+.footercontent { width:1100px; height:150px; margin:0 auto; padding-top:20px; }
+.footercontent .title { font:normal 18px Tahoma, Geneva, sans-serif; color:#acb118; padding-bottom:5px; }
+.footercontent a { font-size:13px; color:#fff; }
+.footer1left { float:left; width:300px; height:130px; overflow:hidden; margin:0 10px; }
+.footer1left .title { color:#acb118; }
+.footer1right { float:right; width:690px; height:130px; overflow:hidden; }
+.footer1right .block { float:left; width:220px; height:130px; overflow:hidden; margin-right:10px; line-height:29px; }
+#ftr a { font:normal 15px Tahoma, Geneva, sans-serif; color:#727272; text-decoration:underline; }
+#ftr a:hover { text-decoration:none; }
+#ftr .clear { clear:both; height:1px; }
+.ftrlogo { float:left; width:280px; margin-top:-70px; margin-left:70px; height:110px; margin-right:40px; overflow:hidden; }
+.ftrlogo a { padding-right:30px; }
+.ftrcopy { padding-top:0px; color:#acb118; } 
+.ftrcopy a { font-size:13px; color;#acb118; }
+.ftrss { float:left; width:900px; margin-top:-66px; margin-left:850px; height:110px; margin-right:40px; overflow:hidden; }
+.b_page { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bgtop.png) center top no-repeat; }
+.center-y { background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/content-y.png) top center repeat-y; height: 100%;
+    min-width: 1150px;
+    width: 100%;
+  }
+    
+.bottomcen {   }
+#hdr { height:240px; width:990px; padding:0 38px; margin:0 auto; }
+#hdr .logotype { float:left; width:300px; }
+#hdr .logotype a { display:block; width:300px; height:220px; }
+#hdr .right { float:right; width:680px; margin:110px 0 0 0; }
+#hdr .right .bar { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bar.jpg) repeat; clear:both; height:44px; width:670px;  padding:0 5px; overflow:hidden;  }
+#hdr .right .bar ul li { float:left; }
+#hdr .right .bar ul li:hover { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bar-links.jpg) 0 7px no-repeat;   }
+#hdr .right .bar ul li a {   display:block; height:44px; font:normal 19px PT Sans Narrow, sans-serif; color:#f2e6c8; padding:12px 10px 0 10px; text-decoration:none; }
+#hdr .right .bar ul li a:hover { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/bar-links2.jpg) right 7px no-repeat; }
+#hdr .right .topinfo { clear:both; height:60px; }
+#hdr .right .topinfo ul li { float:left; height:60px; }
+#hdr .right .topinfo ul li.tele { font:normal 39px PT Sans Narrow, sans-serif; color:#404041; margin:7px 0 0 30px; }
+#hdr .right .topinfo ul li.time { margin:17px 0 0 0; font:normal 18px PT Sans Narrow, sans-serif; color:#509820; margin:25px 0 0 10px; }
+#hdr .right .rever { float:right; width:250px; padding:0 0 0 0; height:56px; overflow:hidden; font:normal 12px PT Sans Narrow, "Trebuchet MS", sans-serif; color:#000; margin:0 0 0 0; line-height:64px; }
+#hdr .right .rever .rghtrever { float:right; }
+#hdr .right .rever a { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/tov.jpg) no-repeat; padding:20px 10px 0 70px; margin:0; height:36px; display:block; float:left; font:normal 18px PT Sans Narrow, "Trebuchet MS", sans-serif; color:#000; text-decoration:none; }
+#hdr .right .rever a:hover { text-decoration:underline; }
+#hdr .right .rever span { font-size:18px;   }
+#hdr .right .rever span span.num, #hdr .right .rever span span { font-family: PT Sans Narrow, "Trebuchet MS", sans-serif;  color:black; }
+.goodsListItemName a { font:normal 19px 'PT Sans Narrow', sans-serif; color:black; }
+.goodsListItemName { height:50px; line-height:22px; }
+.goodsListItemBlock { background:#fff; }
+.goodsListalbka { height:40px; padding-bottom:25px; background: url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/tovarbot.jpg) bottom center repeat-x; }
+.goodsListItemPriceNew { float:right; background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/newprice.png) left top no-repeat; padding:0 0 0 30px; height:37px; }
+.goodsListItemPriceNew2 { background:url(http://design.xn--80aedbwa1amfimfn.xn--p1ai/newprice2.png) no-repeat right top; height:37px; padding-right:10px; padding-top:2px; }
+.goodsListItemPriceNew a span { color:#000; font:normal 14px 'PT Sans Narrow', sans-serif; }
+.goodsListItemPriceNew a span.num { color:#579704; font:normal 20px 'PT Sans Narrow', sans-serif; position:relative; top:3px; }
+.goodsListItemPriceOld { float:left; margin:5px 0 0 10px; }
+.goodsListItemPriceOld a { font:normal 24px 'PT Sans Narrow', sans-serif; text-decoration:line-through; }
+.goodsListItemPriceOld a span span.num, .goodsListItemPriceOld a, .goodsListItemPriceOld a span span { color:#b5914c;}
+.cartFormTfoot .cell1 { padding-top:3px; }
+.cartFormTfoot .cell1, .cartFormTfoot .cell2, .cartFormTfoot .cell2 span span, .cartFormTfoot .cell2 span span.num, .cell4 span span, .cell4 span span.num, .cell5 span span, .cell5 span span.num, .goodsDataMainModificationPriceNow span span, .goodsDataMainModificationPriceNow span span.num, .goodsDataMainModificationPriceOld span span, .goodsDataMainModificationPriceOld span span.num, h5 { font-weight:normal; font-style:normal; font-size:18px; font-family:PT Sans Narrow, "Trebuchet MS", sans-serif; color:#579704; }
+.goodsDataMainModificationPriceNow span span, .goodsDataMainModificationPriceNow span span.num, .goodsDataMainModificationPriceOld span span, .goodsDataMainModificationPriceOld span span.num { font-size:20px; }
+.goodsDataMainModificationPriceOld span span, .goodsDataMainModificationPriceOld span span.num { color:#ccc; font-weight:normal; font-style:normal; font-size:15px; }
+h12 {
+  font:normal 28px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #FF0000;
+}

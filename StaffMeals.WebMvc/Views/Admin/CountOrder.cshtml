@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "CountOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>fghjk</title>  
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+</head>
+<body>
+ <div>
+           <span>Cписок заказов на сегодня</span>
+        @(Html.Kendo()
+            .Grid<StaffMeals.Entities.DataOrders>()
+            .Name("gridCountOrder")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.CountOrder).HeaderTemplate("Количество заказов");
+            }
+                    )
+            .DataSource(dataSource => dataSource.Ajax().Read(read=>read.Action("CountOrderRead","Admin"))
+            )
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "AuthorizeIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model StaffMeals.Entities.Client
+<div class="page_title_box">
+    <div class="page_title"></div>
+</div>
+<div id="registration" class="enter_form" style="display: block !important">
+
+    <div class="modal_form_title">Авторизация</div> 
+
+    @using (Html.BeginForm("Authorize", "Account", FormMethod.Post))
+    {
+         <div>@(Session["IsAuthorized"] != null ? (string)Session["IsAuthorized"] : "" )</div>               
+        <br />
+          <br />
+        <h5>Логин</h5>
+        @Html.TextBoxFor(m => m.Login, new { @class = "enter_input email" })
+        <br />
+          <br />
+        <h5>Пароль</h5>
+        @Html.PasswordFor(m => m.Password, new { @class = "enter_input email" })
+        <br /><br />
+        <input type="submit"  style="width:80px; background:border-box; background-color:greenyellow;height:25px" value="Войти" />
+    }
+    
+</div>

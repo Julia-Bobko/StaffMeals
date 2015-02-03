@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "EditingMenu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>fghjk</title>  
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+</head>
+<body>
+
+    <script type="text/javascript">
+        function AddProductToMenu(idProduct)
+        { 
+            $.ajax({
+                url: '/Meals/AddProductToMenu',
+                type: 'POST',
+                data: { idProduct: idProduct },
+                success: function(data) {
+                    if (data == 1) {
+                        //alert("Success");
+
+                        // remove entry from datasource
+                        //var ds = $('#contacts').data('kendoGrid').dataSource;
+                        //var elem = ds.at(indexOf(ds.data(), function() {
+                        //    return this.Id == contactId;
+                        //}));
+                        //ds.remove(elem);
+
+                        //// refresh view
+                        var grid = $('#gridMenuToday').data('kendoGrid');
+                        var ds = grid.dataSource;
+                        ds.read();
+                        grid.dataSource.fetch();
+                        grid.refresh();
+                        
+                    } else {
+                        alert("fail");
+                    }
+                },
+                fail: function(jqXHR, textStatus, errorThrown) {
+                    alert("fail");
+                }
+            });
+        }
+
+        function DeleteProductFromMenu(idMenu)
+        { 
+            $.ajax({
+                url: '/Meals/DeleteProductFromMenu',
+                type: 'POST',
+                data: { idMenu: idMenu },
+                success: function(data) {
+                    if (data == 1) {                     
+                        var grid = $('#gridMenuToday').data('kendoGrid');
+                        var ds = grid.dataSource;
+                        ds.read();
+                        grid.dataSource.fetch();
+                        grid.refresh();                        
+                    } else {
+                        alert("fail");
+                    }
+                },
+                fail: function(jqXHR, textStatus, errorThrown) {
+                    alert("fail");
+                }
+            });
+        }
+    </script>
+        
+    <div>
+           <span>Продукты</span>
+        @(Html.Kendo()
+            .Grid<StaffMeals.Entities.FullProduct>()
+            .Name("gridProducts")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Category.Title).HeaderTemplate("Категории").Width(100);
+                columns.Bound(p => p.Title).Width(600).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdProduct).HeaderTemplate("Добавить в меню")
+                     .ClientTemplate("<a href=javascript:AddProductToMenu(#: IdProduct #) style=text-align:left class=buttonStyle>Добавить</strong>");
+            }
+                    )
+            .DataSource(dataSource => dataSource.Ajax().Read(read=>read.Action("ProductsRead","Meals"))
+            .Sort(sort =>
+        {
+            sort.Add(product => product.Category.IdCategory).Ascending();
+                     sort.Add(product => product.Title).Ascending();
+        }))
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+
+    <div>
+           <span>Меню</span>
+        @(Html.Kendo()
+            .Grid<StaffMeals.Entities.FullMenu>()
+            .Name("gridMenuToday")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdMenu).HeaderTemplate("Удалить из меню")
+                     .ClientTemplate("<a href=javascript:DeleteProductFromMenu(#: IdMenu #) style=text-align:left class=buttonStyle>Удалить</strong>");
+            }
+                    )
+            .DataSource(dataSource => dataSource.Ajax().Read(read=>read.Action("MenuRead","Meals"))
+            )
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+</body>
+</html>

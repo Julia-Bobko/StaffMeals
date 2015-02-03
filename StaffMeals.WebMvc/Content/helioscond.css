@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'HeliosCondBold';
+    src: url('helioscond.eot');
+    src: url('helioscond.eot') format('embedded-opentype'),
+         url('helioscond.woff') format('woff'),
+         url('helioscond.ttf') format('truetype'),
+         url('helioscond.svg#HeliosCondBold') format('svg');
+}

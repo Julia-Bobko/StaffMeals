@@ -1,0 +1,219 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>fghjk</title>
+    @*    <link href="~/Content/kendo/css/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/css/kendo.bootstrap.min.css" rel="stylesheet" />*@
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    @*    <script src="~/Scripts/kendo/kendo.all.min.js"></script>*@
+
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+</head>
+<body>
+
+
+    <script type="text/javascript">
+        function AddProductToOrder(idMenu)
+        { 
+            $.ajax({
+                url: '/Order/AddOrder',
+                type: 'POST',
+                data: { idMenu: idMenu },
+                success: function(data) {
+                    if (data == 1) {
+                        //alert("Success");
+
+                        // remove entry from datasource
+                        //var ds = $('#contacts').data('kendoGrid').dataSource;
+                        //var elem = ds.at(indexOf(ds.data(), function() {
+                        //    return this.Id == contactId;
+                        //}));
+                        //ds.remove(elem);
+
+                        //// refresh view
+                        var grid = $('#grid5').data('kendoGrid');
+                        var ds = grid.dataSource;
+                        ds.read();
+                        grid.dataSource.fetch();
+                        grid.refresh();
+                        
+                    } else {
+                        alert("fail");
+                    }
+                },
+                fail: function(jqXHR, textStatus, errorThrown) {
+                    alert("fail");
+                }
+            });
+        }
+
+        function DeleteProductToOrder(idMenu)
+        { 
+            $.ajax({
+                url: '/Order/DeleteOrder',
+                type: 'POST',
+                data: { idMenu: idMenu },
+                success: function(data) {
+                    if (data == 1) {
+                        //alert("Success");
+
+                        // remove entry from datasource
+                        //var ds = $('#contacts').data('kendoGrid').dataSource;
+                        //var elem = ds.at(indexOf(ds.data(), function() {
+                        //    return this.Id == contactId;
+                        //}));
+                        //ds.remove(elem);
+
+                        //// refresh view
+                        var grid = $('#grid5').data('kendoGrid');
+                        var ds = grid.dataSource;
+                        ds.read();
+                        grid.dataSource.fetch();
+                        grid.refresh();
+                        
+                    } else {
+                        alert("fail");
+                    }
+                },
+                fail: function(jqXHR, textStatus, errorThrown) {
+                    alert("fail");
+                }
+            });
+        }
+        function SymOrder()
+        { 
+            $.ajax({
+                url: '/Meals/GetOrderPrice',
+                type: 'POST',             
+                success: function(data) {
+                    if (data !=0) {
+                        
+                        var price = $('#allPrice');
+                        price.text("Цена: " + data + "  руб.");
+                        $('#basket').text("Цена: " + data + " руб.");
+                    } else {
+                        alert("fail");
+                    }
+                },
+                fail: function(jqXHR, textStatus, errorThrown) {
+                    alert("fail");
+                }
+            });
+        }
+    </script>
+    <div>
+        <span>Первые блюда</span>
+        @(Html.Kendo()
+            .Grid((IEnumerable<StaffMeals.Entities.FullMenu>)ViewBag.Menu1)
+            .Name("grid1")                        
+            .Columns(columns =>
+            {
+
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdMenu).HeaderTemplate("Добавить в заказ")
+                    .Template(@<text><input type="button" value="Добавить" style="text-align:left" class="buttonStyle" onclick=AddProductToOrder(@item.IdMenu) />
+        </text>);
+            }
+                    )
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+    <div>
+        <span>Вторые блюда</span>
+        @(Html.Kendo()
+            .Grid((IEnumerable<StaffMeals.Entities.FullMenu>)ViewBag.Menu2)
+            .Name("grid2")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdMenu).HeaderTemplate("Добавить в заказ")
+                .Template(@<text><input type="button" value="Добавить" style="text-align:left" class="buttonStyle" onclick=AddProductToOrder(@item.IdMenu) />
+        </text>);
+            }
+                     )
+            .Pageable()
+            .Sortable()
+          )
+        <br />
+    </div>
+
+    <div>
+        <span>Салаты</span>
+        @(Html.Kendo()
+            .Grid((IEnumerable<StaffMeals.Entities.FullMenu>)ViewBag.Menu3)
+            .Name("grid3")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdMenu).HeaderTemplate("Добавить в заказ")
+                   .Template(@<text><input type="button" value="Добавить" style="text-align:left" class="buttonStyle" onclick=AddProductToOrder(@item.IdMenu) />
+        </text>);
+            }
+                    )
+            .Pageable()
+            .Sortable()
+          )
+        <br />
+    </div>
+
+    <div>
+        <span>Выпечки</span>
+        @(Html.Kendo()
+            .Grid((IEnumerable<StaffMeals.Entities.FullMenu>)ViewBag.Menu4)
+            .Name("grid4")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdMenu).HeaderTemplate("Добавить в заказ")
+                   .Template(@<text><input type="button" value="Добавить" style="text-align:left" class="buttonStyle" onclick=AddProductToOrder(@item.IdMenu) />
+        </text>);
+            }
+                    )
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+
+    <div>
+        <span>Заказ</span>
+        @(Html.Kendo()
+            .Grid<StaffMeals.Entities.FullMenu>()
+            .Name("grid5")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.Title).Width(700).HeaderTemplate("Продукты");
+                columns.Bound(p => p.Price).HeaderTemplate("Цена руб.");
+                columns.Bound(p => p.IdMenu).HeaderTemplate("Удалить из заказа")
+                      .ClientTemplate("<a href=javascript:DeleteProductToOrder(#: IdMenu #) style=text-align:left class=buttonStyle>Удалить</a>");
+            }
+                    )
+            .DataSource(dataSource => dataSource.Ajax().Read(read => read.Action("OrderRead", "Meals")))
+            .Pageable()
+            .Sortable()
+            )
+        <br />
+    </div>
+
+    <div>
+        <a href="javascript:SymOrder()" style="text-align:left" class="buttonStyle">Заказать</a>
+      <div id="allPrice" style="font-size: 30px; color: #FF0000; margin: 10px;"></div>
+    </div>
+</body>
+</html>
+
+
+
+
